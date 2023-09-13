@@ -24,11 +24,11 @@
 }
 
 .macbook-air .p {
-  position: absolute;
+  /* position: absolute; */
   width: 60px;
   height: 93px;
-  top: 26px;
-  left: 74px;
+  /* top: 26px;
+  left: 74px; */
 }
 
 .macbook-air .pmm {

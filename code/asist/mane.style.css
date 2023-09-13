@@ -1,0 +1,153 @@
+.mane-box-W{
+    width: 145.086px;
+    height: 20px;
+    background: var(--mane-color, #373636);
+    display: inline-block;
+  }
+  
+.mane-box-H{
+    display: inline-block;
+    width: 20px;
+    height: 145.08px;
+    background: var(--mane-color, #373636);
+}
+.mane-box-W:nth-of-type(1){
+  position: relative;
+  left: 1100px;
+  width: 100px;
+  bottom: 105px;
+}
+.mane-box-W:nth-of-type(2){
+  position: relative;
+  left: 730px;
+  bottom: 105px;
+}
+.mane-box-H:nth-of-type(3){
+  position: relative;
+  left: 400px;
+  height: 125px;
+}
+.mane-box-H:nth-of-type(4){
+  position: relative;
+  right: 23px;
+  height: 125px;
+}
+.mane-box-H:nth-of-type(5){
+  position: relative;
+  top: 70px;
+  height: 105px;
+  left: 750px;
+}
+.mane-box-W:nth-of-type(6){
+  position: relative;
+  top: 51px;
+  left: 460px;
+}
+.mane-box-H:nth-of-type(7){
+  position: relative;
+  top: 105px;
+  height: 110px;
+  left: 80px;
+}
+.mane-box-W:nth-of-type(8){
+  position: relative;
+  right: 140px;
+  top: 15px;
+  width: 130px;
+}
+.mane-box-W:nth-of-type(9){
+  position: relative;
+  right: 355px;
+  width: 135;
+  top: 144px;
+}
+.mane-box-W:nth-of-type(10){
+  position: relative;
+  right: 710px;
+  width: 120px;
+  top: 94px;
+}
+.mane-box-H:nth-of-type(11){
+  height: 120px;
+  position: relative;
+  top: 220px;
+  left: 250px;
+}
+.mane-box-W:nth-of-type(12){
+  position: relative;
+  top: 170px;
+  right: 70px;
+}
+.mane-box-H:nth-of-type(13){
+  position: relative;
+  top: 220px;
+  right: 380px;
+  height: 120px;
+}
+.mane-box-H:nth-of-type(14){
+  position: relative;
+  top: 320px;
+  right: 620px;
+  height: 120px;
+}
+.mane-box-W:nth-of-type(15){
+  position: relative;
+  top: 150px;
+  left: 170px;
+}
+.mane-box-H:nth-of-type(16){
+  position: relative;
+  height: 120px;
+  top: 200px;
+  right: 120px;
+}
+.mane-box-W:nth-of-type(17){
+  position: relative;
+  top: 180px;
+  left: 600px;
+}
+.mane-box-W:nth-of-type(18){
+  position: relative;
+  top: 230px;
+  left: 670px;
+  width: 140px;
+}
+.mane-box-H:nth-of-type(19){
+  height: 120px;
+  position: relative;
+  top: 410px;
+  left: 450px;
+}
+.mane-box-W:nth-of-type(20){
+  position: relative;
+  top: 310px;
+  left: 200px;
+}
+.mane-box-H:nth-of-type(21){
+  position: relative;
+  top: 310px;
+  height: 100px;
+  right: 60px;
+}
+.mane-box-H:nth-of-type(22){
+  position: relative;
+  top: 400px;
+  height: 100px;
+  right: 170px;
+}
+.mane-box-W:nth-of-type(23){
+  position: relative;
+  top: 280px;
+  right: 434px;
+}
+.mane-box-W:nth-of-type(24){
+  position: relative;
+  top: 430px;
+  right: 640px;
+}
+.mane-box-H:nth-of-type(25){
+  position: relative;
+  top: 350px;
+  height: 100px;
+  right: 900px;
+}
