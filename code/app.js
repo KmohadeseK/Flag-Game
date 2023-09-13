@@ -30,7 +30,7 @@ function moveImage(event) {
 document.addEventListener("keydown", moveImage); 
 
 
-// حMoving the character 1
+// Moving the character 1
 // slect character 1
 let pl1 = document.querySelector(".p");
 // move the character varble
@@ -48,3 +48,29 @@ function movePL1(e){
         console.log(pl1.x);
     }
 }
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+        if( seconds == 0 ){
+            alert('وقت بازی تمام شد!')
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fortyFivesecondes = 45,
+        display = document.querySelector('.timer');
+    startTimer(fortyFivesecondes, display);
+};
