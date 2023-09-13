@@ -1,0 +1,11 @@
+.mane-box-W{
+    width: 145.086px;
+    height: 20px;
+    background: var(--mane-color, #373636);
+  }
+  
+.mane-box-H{
+    width: 20px;
+    height: 145.08px;
+    background: var(--mane-color, #373636);
+}

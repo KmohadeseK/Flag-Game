@@ -1,0 +1,143 @@
+.macbook-air {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0px 2px 5px 7px rgba(0, 0, 0, 0.25);
+}
+
+.macbook-air .div {
+  background-color: rgba(255, 255, 255, 1);
+  background: linear-gradient(180deg, rgb(72, 131, 221) 0%, rgb(221, 72, 72) 100%);
+  width: 1280px;
+  height: 832px;
+  position: relative;
+}
+
+.macbook-air .overlap-group {
+  position: absolute;
+  width: 1262px;
+  height: 668px;
+  top: 132px;
+  left: 9px;
+}
+
+.macbook-air .p {
+  position: absolute;
+  width: 60px;
+  height: 93px;
+  top: 26px;
+  left: 74px;
+}
+
+.macbook-air .pmm {
+  position: absolute;
+  width: 67px;
+  height: 93px;
+  top: 516px;
+  left: 1080px;
+  object-fit: cover;
+}
+
+.macbook-air .mane {
+  position: absolute;
+  width: 1262px;
+  height: 668px;
+  top: 0;
+  left: 0;
+}
+
+.macbook-air .l-mane {
+  position: absolute;
+  width: 599px;
+  height: 672px;
+  top: -4px;
+  left: 663px;
+}
+
+
+.macbook-air .r-mane {
+  position: absolute;
+  width: 599px;
+  height: 672px;
+  top: 0;
+  left: 0;
+}
+
+.macbook-air .hedaer {
+  display: flex;
+  width: 1280px;
+  height: 114px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 59px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--variable-collection-header-bg-color);
+}
+
+.macbook-air .pl {
+  display: flex;
+  width: 301px;
+  height: 76px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  background-color: var(--p1-color);
+  border-radius: 0px 0px 13px 13px;
+}
+
+.macbook-air .rectangle {
+  position: relative;
+  width: 58px;
+  height: 52px;
+  background-color: var(--point-color);
+  border-radius: 1000px;
+}
+
+.macbook-air .rectangle-2 {
+  position: relative;
+  width: 58px;
+  height: 52px;
+  background-color: var(--los-point-color);
+  border-radius: 1000px;
+}
+
+.macbook-air .timer {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 63px;
+  position: relative;
+  background-color: var(--time-bg-color);
+  border-radius: 0px 0px 50px 50px;
+}
+
+.macbook-air .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: var(--los-point-color);
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .pl-2 {
+  display: flex;
+  width: 301px;
+  height: 76px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  background-color: var(--pl2-color);
+  border-radius: 0px 0px 13px 13px;
+}

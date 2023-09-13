@@ -1,0 +1,9 @@
+:root {
+  --pl2-color: rgba(221, 72, 72, 1);
+  --point-color: rgba(72, 221, 96, 1);
+  --los-point-color: rgba(219, 219, 219, 1);
+  --p1-color: rgba(72, 131, 221, 1);
+  --time-bg-color: rgba(54, 54, 54, 1);
+  --variable-collection-header-bg-color: rgba(81, 81, 81, 1);
+  --variable-collection-mane-color: rgba(55, 54, 54, 1);
+}
