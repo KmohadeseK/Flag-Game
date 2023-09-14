@@ -1,7 +1,7 @@
 var img = document.querySelector(".pmm");
 var topPos = 0;
 var leftPos = 0;
-var sound = new Audio("Runing.mp3"); // اضافه کردن فایل صوتی
+var sound = new Audio("Runing.mp3"); // Add audio file
 
 function moveImage(event) {
     switch (event.keyCode) {
@@ -22,7 +22,7 @@ function moveImage(event) {
             img.style.top = topPos + "px";
             break;
     }
-    sound.play(); // پخش صدا
+    sound.play(); // Play Audio
 }
 
 document.addEventListener("keydown", moveImage); ener("keydown", moveImage);
