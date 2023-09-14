@@ -1,3 +1,21 @@
+// date:1402/06/20
+// project:flag-game
+// gr:...,...,...
+// description:...
+
+// code function brai start v setTime [START]
+function startTime() {
+  let time = 45;
+  let countDown = setInterval(function () {
+    // time braber ba 0
+    if (time <= 0) {
+      clearInterval(countDown);
+    }
+    // select kardn timer
+    document.querySelector(".timer").innerHTML = time--;
+  }, 1000);
+}
+
 var pl2 = document.querySelector(".pmm");
 var pl2TopPos = 0;
 var pl2LeftPos = 0;
@@ -26,35 +44,6 @@ function moveImage(event) {
   }
   sound.play(); // Play Audio
 }
-
-// code startTimer [START]
-function startTimer(duration, display) {
-  let timer = duration,
-    minutes,
-    seconds;
-
-  // ejad function brai modat zaman
-  setInterval(function () {
-    minutes = parseInt(timer / 60, 10);
-    seconds = parseInt(timer % 60, 10);
-
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-
-    display.textContent = minutes + ":" + seconds;
-
-    //   brai makos kardan zaman
-    if (--timer < 0) {
-      timer = duration;
-    }
-  }, 100);
-}
-// function time safeh
-window.onload = function () {
-  let fortyFivesecondes = 45,
-    display = document.querySelector(".timer");
-  startTimer(fortyFivesecondes, display);
-};
 
 document.addEventListener("keydown", moveImage);
 
