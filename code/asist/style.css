@@ -116,6 +116,8 @@
   position: relative;
   background-color: var(--time-bg-color);
   border-radius: 0px 0px 50px 50px;
+  font-size: 50px;
+  color: white;
 }
 
 .macbook-air .text-wrapper {
