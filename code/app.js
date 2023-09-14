@@ -16,4 +16,3 @@ function startTime() {
   }, 1000);
 }
 
-document.addEventListener("keydown", moveImage);
