@@ -64,6 +64,8 @@ function moveImage(event) {
     }
 }
 
+
+
 // HEAD
 document.addEventListener("keydown", function (event) {
     if (!isKeyPressed) {
