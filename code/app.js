@@ -77,44 +77,9 @@ document.addEventListener("keyup", function (event) {
 });
 
 
-// move the character varble
-// let pl1TopPos = 0;
-// let pl1LeftPos = 0;
-
-// document.addEventListener("keydown", movePL1);
-
-// function movePL1(e) {
-//     // go top
-//     if (e.key == "w") {
-//         pl1TopPos += 10;
-//         pl1.getBoundingClientRect()
-//         pl1.x += pl1TopPos;
-//         console.log(pl1.x);
-//     }
-// }
-
-// //======
-// document.addEventListener("keydown", moveImage);
 
 
-// // Moving the character 1
-// // slect character 1
-// let pl1 = document.querySelector(".p");
-// // move the character varble
-// let pl1TopPos = 0;
-// let pl1LeftPos = 0;
-
-// document.addEventListener("keydown", movePL1);
-
-// function movePL1(e) {
-//     // go top
-//     if (e.key == "w") {
-//         pl1TopPos += 10;
-//         pl1.getBoundingClientRect()
-//         pl1.x += pl1TopPos;
-//         console.log(pl1.x);
-//     }
-// }
+//...................↓ TIMER ↓.......................
 
 // function startTimer(duration, display) {
 //     var timer = duration, minutes, seconds;
