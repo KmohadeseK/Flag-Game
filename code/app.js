@@ -64,7 +64,7 @@ function moveImage(event) {
     }
 }
 
-<<<<<<< HEAD
+// HEAD
 document.addEventListener("keydown", function (event) {
     if (!isKeyPressed) {
         isKeyPressed = true; // Set pressed key state to true
@@ -94,8 +94,8 @@ document.addEventListener("keyup", function (event) {
 //     }
 // }
 
-=======
-document.addEventListener("keydown", moveImage); 
+//======
+document.addEventListener("keydown", moveImage);
 
 
 // Moving the character 1
@@ -107,11 +107,11 @@ let pl1LeftPos = 0;
 
 document.addEventListener("keydown", movePL1);
 
-function movePL1(e){
+function movePL1(e) {
     // go top
-    if(e.key == "w"){
+    if (e.key == "w") {
         pl1TopPos += 10;
-        pl1.getBoundingClientRect() 
+        pl1.getBoundingClientRect()
         pl1.x += pl1TopPos;
         console.log(pl1.x);
     }
@@ -131,7 +131,7 @@ function startTimer(duration, display) {
         if (--timer < 0) {
             timer = duration;
         }
-        if( seconds == 0 ){
+        if (seconds == 0) {
             alert('وقت بازی تمام شد!')
         }
     }, 1000);
@@ -142,4 +142,4 @@ window.onload = function () {
         display = document.querySelector('.timer');
     startTimer(fortyFivesecondes, display);
 };
->>>>>>> fd51eb29e8e008461a4a0e137ef02908949cb8a7
+// fd51eb29e8e008461a4a0e137ef02908949cb8a7
