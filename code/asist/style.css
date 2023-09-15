@@ -29,22 +29,9 @@
   left: 9px;
 }
 
-/* css code properties player1 [START] */
-.macbook-air .p {
-  width: 60px;
-  height: 93px;
-}
-/* css code properties player1 [END] */
 
-/* css code aks player2 [START] */
-.macbook-air .pmm {
-  width: 67px;
-  height: 93px;
-  top: 516px;
-  left: 1080px;
-  object-fit: cover;
-}
-/* css code properties player2 [END] */
+
+
 
 /* css code properties mane [START] */
 .macbook-air .mane {

@@ -1,0 +1,74 @@
+/* css code properties player1 [START] */
+.PL1{
+    display: inline-block;
+    width: 54px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image:url(/code/img/PL1/normalRight.png);
+    height: 93px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite ;
+}
+@keyframes move-left-run-PL1 {
+    33%{
+     background-image: url(/code/img/PL1/run-left/p1Lrun2.png) ;
+    }
+    66%{
+     background-image:url(/code/img/PL1/run-left/p1Lrun3.png);
+    }
+    99%{
+     background-image:url(/code/img/PL1/run-left/p1Lrun4.png);
+    }
+}
+@keyframes move-right-run-PL1 {
+    33%{
+        background-image: url(/code/img/PL1/run-rghit/p1Lrun2.png);
+    }
+    66%{
+        background-image: url(/code/img/PL1/run-rghit/p1Lrun3.png);
+    }
+    99%{
+        background-image: url(/code/img/PL1/run-rghit/p1Lrun4.png);
+    }
+}
+/* css code properties player1 [END] */
+
+/* css code aks player2 [START] */
+.PL2{
+  display: inline-block;
+  width: 54px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image:url(/code/img/PL2/normalLeft.png);
+  height: 93px;
+  animation-duration: 1s;
+  animation-iteration-count: infinite ;
+}
+/* .PL2:hover{
+    animation-name: movePL2;
+} */
+/* css code properties player2 [END] */
+/* move PL2 [start]*/
+@keyframes move-left-run-PL2 {
+    33%{
+     background-image: url(/code/img/PL2/run-left/p2Lrun2.png) ;
+    }
+    66%{
+     background-image:url(/code/img/PL2/run-left/p2Lrun3.png);
+    }
+    99%{
+     background-image:url(/code/img/PL2/run-left/p2Lrun4.png);
+    }
+}
+@keyframes move-right-run-PL2 {
+    33%{
+        background-image: url(/code/img/PL2/run-rghit/p2Lrun2.png);
+    }
+    66%{
+        background-image: url(/code/img/PL2/run-rghit/p2Lrun3.png);
+    }
+    99%{
+        background-image: url(/code/img/PL2/run-rghit/p2Lrun4.png);
+    }
+}
+/* move PL2 [end]*/
