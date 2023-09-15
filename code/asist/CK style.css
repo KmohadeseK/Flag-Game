@@ -44,9 +44,6 @@
   animation-duration: 1s;
   animation-iteration-count: infinite ;
 }
-/* .PL2:hover{
-    animation-name: movePL2;
-} */
 /* css code properties player2 [END] */
 /* move PL2 [start]*/
 @keyframes move-left-run-PL2 {
