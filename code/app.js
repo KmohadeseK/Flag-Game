@@ -39,12 +39,12 @@ function animationmovePL2Stop(e){
 // if == stop move animation CK
   if(e.keyCode == 65){
     PL2 =document.querySelector(".PL2").style.animationName = "none";
-    PL2 =document.querySelector(".PL2").style.backgroundImage =  "url(/code/img/PL2/normalleft.png)"
+    PL2 =document.querySelector(".PL2").style.backgroundImage =  "url(asist/img/PL2/normalleft.png)"
   }
   
   else if(e.keyCode == 68){
     PL2 =document.querySelector(".PL2").style.animationName = "none";
-    PL2 =document.querySelector(".PL2").style.backgroundImage =  "url(/code/img/PL2/normalRight.png)"
+    PL2 =document.querySelector(".PL2").style.backgroundImage =  "url(asist/img/PL2/normalRight.png)"
   }
 }
 
@@ -72,11 +72,11 @@ function animationmovePL1Stop(e){
 // if == stop move animation CK
   if(e.keyCode == "37"){
     PL2 =document.querySelector(".PL1").style.animationName = "none";
-    PL2 =document.querySelector(".PL1").style.backgroundImage =  "url(/code/img/PL1/normalLeft.png)"
+    PL2 =document.querySelector(".PL1").style.backgroundImage =  "url(asist/img/PL1/normalLeft.png)"
   }
   
   else if(e.keyCode == "39"){
     PL2 =document.querySelector(".PL1").style.animationName = "none";
-    PL2 =document.querySelector(".PL1").style.backgroundImage =  "url(/code/img/PL1/normalRight.png)"
+    PL2 =document.querySelector(".PL1").style.backgroundImage =  "url(asist/img/PL1/normalRight.png)"
   }
 }
