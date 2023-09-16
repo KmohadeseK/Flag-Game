@@ -17,6 +17,8 @@ function startTime() {
 }
 
 // -----=animation PL2 move=-----
+
+// select safeh bazi
 let overlapGroup = document.querySelector('.overlap-group');
 
 document.addEventListener("keydown", animationmovePL2);
@@ -32,6 +34,7 @@ let PL2TopMove = 0;
 
 function animationmovePL2(e) {
 
+  // select mohgaeyat makani
   const road = overlapGroup.getBoundingClientRect();
   console.log(road);
 
@@ -48,7 +51,7 @@ function animationmovePL2(e) {
     PL2 = document.querySelector(".PL2").style.backgroundImage =
       "url(asist/img/PL2/normalleft.png)";
 
-  } else if (e.keyCode == 68) {
+  } else if (e.keyCode == 68 && PL2LeftMove < 1210) {
 
     // move PL2 right
     PL2LeftMove += 10;
@@ -60,7 +63,7 @@ function animationmovePL2(e) {
     PL2 = document.querySelector(".PL2").style.backgroundImage =
       "url(asist/img/PL2/normalRight.png)";
 
-  } else if (e.keyCode == 87) {
+  } else if (e.keyCode == 87){
 
     // move PL2 top
     PL2TopMove -= 10;
@@ -128,7 +131,7 @@ let PL1TopMove = 0;
 function animationmovePL1(e) {
 
   // if == move CK ba key
-  if (e.keyCode == "37") {
+  if (e.keyCode == "37" && PL1LeftMove > -42) {
 
     // move CK left
     PL1LeftMove -= 10;
@@ -140,7 +143,7 @@ function animationmovePL1(e) {
     PL1 = document.querySelector(".PL1").style.animationName =
       "move-left-run-PL1";
 
-  } else if (e.keyCode == "39") {
+  } else if (e.keyCode == "39"&& PL1LeftMove < 1149) {
 
     // move CK right
     PL1LeftMove += 10;
