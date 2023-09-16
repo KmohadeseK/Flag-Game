@@ -4,6 +4,7 @@
   display: inline-block;
   position: relative;
   height: 668px;
+  overflow: hidden;
 }
 
 /* css code properties divarha [START] */
