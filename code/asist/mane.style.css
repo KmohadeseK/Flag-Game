@@ -23,6 +23,7 @@
 .mane-box-W:nth-of-type(3) {
   transform: translate(1000px,-120px)  !important;
   width: 110px;
+
 }
 .mane-box-W:nth-of-type(4) {
   transform: translate(600px,-120px)  !important;

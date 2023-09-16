@@ -24,7 +24,40 @@ document.addEventListener("keyup", animationmovePL2Stop);
 let PL2 = document.querySelector(".PL2")
 let spaceAlki = 0 
 // function == move animation CK
+let PL2LeftMove = 0
+let PL2TopMove = 0
 function animationmovePL2(e){
+  // if == move CK ba key
+  if(e.keyCode == 65){
+    // move PL2 left
+    PL2LeftMove -= 10
+    PL2 =document.querySelector(".PL2").style.left = PL2LeftMove + "px";
+    // move animation
+    PL2 =document.querySelector(".PL2").style.animationName ="move-left-run-PL2";
+    PL2 =document.querySelector(".PL2").style.backgroundImage =  "url(asist/img/PL2/normalleft.png)"
+  
+  }
+  else if(e.keyCode == 68){
+    // move PL2 right
+    PL2LeftMove += 10
+    PL2 =document.querySelector(".PL2").style.left = PL2LeftMove + "px";
+    // move animation
+    PL2 =document.querySelector(".PL2").style.animationName ="move-right-run-PL2";
+    PL2 =document.querySelector(".PL2").style.backgroundImage =  "url(asist/img/PL2/normalRight.png)"
+    
+  }
+  else if(e.keyCode == 87){
+    // move PL2 top
+    PL2TopMove -= 10
+    PL2 =document.querySelector(".PL2").style.top = PL2TopMove + "px";
+    // move animation
+  }
+  else if(e.keyCode == 83){
+    // move PL2 btoom
+    PL2TopMove += 10
+    PL2 =document.querySelector(".PL2").style.top = PL2TopMove + "px";
+    // move animation
+  }
   //space if
   if (e.keyCode == 32 & spaceAlki == 0){
     alert("میخوای از صفحه بپره بیرون بیاد پیشت ؟")
@@ -44,18 +77,6 @@ function animationmovePL2(e){
     spaceAlki +=1
   }
 
-
-  // if == move CK ba key
-  if(e.keyCode == 65){
-    PL2 =document.querySelector(".PL2").style.animationName ="move-left-run-PL2";
-    PL2 =document.querySelector(".PL2").style.backgroundImage =  "url(asist/img/PL2/normalleft.png)"
-
-  }
-  else if(e.keyCode == 68){
-    PL2 =document.querySelector(".PL2").style.animationName ="move-right-run-PL2";
-    PL2 =document.querySelector(".PL2").style.backgroundImage =  "url(asist/img/PL2/normalRight.png)"
-    
-  }
 }
 
 // function == stop move animation CK
@@ -79,18 +100,41 @@ document.addEventListener("keyup", animationmovePL1Stop);
 // slect PL2
 let PL1 = document.querySelector(".PL1")
 // function == move animation CK
+let PL1LeftMove = 0
+let PL1TopMove = 0
 function animationmovePL1(e){
   // if == move CK ba key
   if(e.keyCode == "37"){
-    PL2 =document.querySelector(".PL1").style.backgroundImage =  "url(asist/img/PL1/normalLeft.png)"
-    PL2 =document.querySelector(".PL1").style.animationName ="move-left-run-PL1";
 
+    // move CK left
+    PL1LeftMove -= 10
+    PL1 =document.querySelector(".PL1").style.left = PL1LeftMove + "px";
+
+
+    PL1 =document.querySelector(".PL1").style.backgroundImage =  "url(asist/img/PL1/normalLeft.png)"
+    PL1 =document.querySelector(".PL1").style.animationName ="move-left-run-PL1";
+
+    
   }
   else if(e.keyCode == "39"){
-    PL2 =document.querySelector(".PL1").style.animationName ="move-right-run-PL1";
-    
-    PL2 =document.querySelector(".PL1").style.backgroundImage =  "url(asist/img/PL1/normalRight.png)"
+    // move CK right
+    PL1LeftMove += 10
+    PL1 =document.querySelector(".PL1").style.left = PL1LeftMove + "px";
 
+
+    PL1 =document.querySelector(".PL1").style.animationName ="move-right-run-PL1";
+    
+    PL1 =document.querySelector(".PL1").style.backgroundImage =  "url(asist/img/PL1/normalRight.png)"
+  }
+  else if(e.keyCode == "38"){
+    // move top
+    PL1TopMove -= 10
+    PL1 =document.querySelector(".PL1").style.top = PL1TopMove + "px";
+  }
+  else if(e.keyCode == "40"){
+  // move bttom
+  PL1TopMove += 10
+  PL1 =document.querySelector(".PL1").style.top = PL1TopMove + "px";
   }
 }
 
@@ -98,12 +142,18 @@ function animationmovePL1(e){
 function animationmovePL1Stop(e){
 // if == stop move animation CK
   if(e.keyCode == "37"){
-    PL2 =document.querySelector(".PL1").style.animationName = "none";
-    PL2 =document.querySelector(".PL1").style.backgroundImage =  "url(asist/img/PL1/normalLeft.png)"
+    PL1 =document.querySelector(".PL1").style.animationName = "none";
+    PL1 =document.querySelector(".PL1").style.backgroundImage =  "url(asist/img/PL1/normalLeft.png)"
   }
   
   else if(e.keyCode == "39"){
-    PL2 =document.querySelector(".PL1").style.animationName = "none";
-    PL2 =document.querySelector(".PL1").style.backgroundImage =  "url(asist/img/PL1/normalRight.png)"
+    PL1 =document.querySelector(".PL1").style.animationName = "none";
+    PL1 =document.querySelector(".PL1").style.backgroundImage =  "url(asist/img/PL1/normalRight.png)"
   }
 }
+
+
+// code of mane [start]
+let maneH = document.querySelector(".mane-box-H")
+let maneW = document.querySelector(".mane-box-W")
+

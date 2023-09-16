@@ -1,12 +1,16 @@
+/* css code properties player1 and 2 [START] */
+.PL1,.PL2{
+    display: inline-block;
+    height: 93px;
+    animation-duration: .6s;
+    animation-iteration-count: infinite ;
+    background-repeat: no-repeat;
+    width: 54px;
+    position: relative;
+}
 /* css code properties player1 [START] */
 .PL1{
-    display: inline-block;
-    width: 54px;
-    background-repeat: no-repeat;
-    background-image:url(img/PL1/normalRight.png);
-    height: 93px;
-    animation-duration: 1s;
-    animation-iteration-count: infinite ;
+    background-image:url(img/PL1/normalRight.png);   
 }
 @keyframes move-left-run-PL1 {
     33%{
@@ -34,13 +38,7 @@
 
 /* css code aks player2 [START] */
 .PL2{
-  display: inline-block;
-  width: 54px;
-  background-repeat: no-repeat;
   background-image:url(img/PL2/normalLeft.png);
-  height: 93px;
-  animation-duration: 1s;
-  animation-iteration-count: infinite ;
 }
 /* css code properties player2 [END] */
 /* move PL2 [start]*/
