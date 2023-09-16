@@ -63,14 +63,14 @@ function animationmovePL2(e) {
     PL2 = document.querySelector(".PL2").style.backgroundImage =
       "url(asist/img/PL2/normalRight.png)";
 
-  } else if (e.keyCode == 87){
+  } else if (e.keyCode == 87 && PL2TopMove > -57){
 
     // move PL2 top
     PL2TopMove -= 10;
     PL2 = document.querySelector(".PL2").style.top = PL2TopMove + "px";
 
     // move animation
-  } else if (e.keyCode == 83) {
+  } else if (e.keyCode == 83 && PL2TopMove < 530) {
 
     // move PL2 btoom
     PL2TopMove += 10;
@@ -155,13 +155,13 @@ function animationmovePL1(e) {
     PL1 = document.querySelector(".PL1").style.backgroundImage =
       "url(asist/img/PL1/normalRight.png)";
 
-  } else if (e.keyCode == "38") {
+  } else if (e.keyCode == "38"&& PL1TopMove > -50) {
 
     // move top
     PL1TopMove -= 10;
     PL1 = document.querySelector(".PL1").style.top = PL1TopMove + "px";
 
-  } else if (e.keyCode == "40") {
+  } else if (e.keyCode == "40"&& PL1TopMove < 530) {
 
     // move bttom
     PL1TopMove += 10;
