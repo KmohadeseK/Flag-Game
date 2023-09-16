@@ -25,8 +25,7 @@ let PL2 = document.querySelector(".PL2")
 let spaceAlki = 0 
 // function == move animation CK
 function animationmovePL2(e){
-  // if == move CK ba key
-  console.log(e.keyCode );
+  //space if
   if (e.keyCode == 32 & spaceAlki == 0){
     alert("میخوای از صفحه بپره بیرون بیاد پیشت ؟")
     spaceAlki +=1
@@ -45,6 +44,8 @@ function animationmovePL2(e){
     spaceAlki +=1
   }
 
+
+  // if == move CK ba key
   if(e.keyCode == 65){
     PL2 =document.querySelector(".PL2").style.animationName ="move-left-run-PL2";
     PL2 =document.querySelector(".PL2").style.backgroundImage =  "url(asist/img/PL2/normalleft.png)"
