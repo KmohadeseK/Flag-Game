@@ -1,6 +1,7 @@
 /* css code properties overlap-group [START] */
 .overlap-group{
   width: 1262px;
+  display: inline-block;
   position: relative;
   height: 668px;
 }
@@ -19,144 +20,95 @@
   height: 145.08px;
   background: var(--mane-color, #373636);
 }
-.mane-box-W:nth-of-type(1) {
-  position: relative;
-  left: 1100px;
-  width: 100px;
-  bottom: 105px;
+.mane-box-W:nth-of-type(3) {
+  transform: translate(1000px,-120px)  !important;
+  width: 110px;
 }
-.mane-box-W:nth-of-type(2) {
-  position: relative;
-  left: 730px;
-  bottom: 105px;
-}
-.mane-box-H:nth-of-type(3) {
-  position: relative;
-  left: 400px;
-  height: 125px;
-}
-.mane-box-H:nth-of-type(4) {
-  position: relative;
-  right: 23px;
-  height: 125px;
+.mane-box-W:nth-of-type(4) {
+  transform: translate(600px,-120px)  !important;
 }
 .mane-box-H:nth-of-type(5) {
-  position: relative;
-  top: 70px;
-  height: 105px;
-  left: 750px;
+  transform: translate(290px,-20px);
+  height: 120px;
 }
-.mane-box-W:nth-of-type(6) {
-  position: relative;
-  top: 51px;
-  left: 460px;
+.mane-box-H:nth-of-type(6) {
+  transform: translate(-200px);
 }
 .mane-box-H:nth-of-type(7) {
-  position: relative;
-  top: 105px;
-  height: 110px;
-  left: 80px;
+  transform: translate(620px,110px);
+  height: 120px;
 }
 .mane-box-W:nth-of-type(8) {
-  position: relative;
-  right: 140px;
-  top: 15px;
-  width: 130px;
+  transform: translate(320px,90px);
 }
-.mane-box-W:nth-of-type(9) {
-  position: relative;
-  right: 355px;
-  width: 135;
-  top: 144px;
+.mane-box-H:nth-of-type(9) {
+  transform: translate(-40px,120px);
+  height: 110px;
 }
 .mane-box-W:nth-of-type(10) {
-  position: relative;
-  right: 710px;
-  width: 120px;
-  top: 94px;
+  transform: translate(-300px,30px);
+  width: 110px;
 }
-.mane-box-H:nth-of-type(11) {
-  height: 120px;
-  position: relative;
-  top: 220px;
-  left: 250px;
+.mane-box-W:nth-of-type(11) {
+  transform: translate(-720px,110px);
 }
 .mane-box-W:nth-of-type(12) {
-  position: relative;
-  top: 170px;
-  right: 70px;
+  transform: translate(-620px,180px);
 }
 .mane-box-H:nth-of-type(13) {
-  position: relative;
-  top: 220px;
-  right: 380px;
+  transform: translate(140px,270px);
   height: 120px;
 }
-.mane-box-H:nth-of-type(14) {
-  position: relative;
-  top: 320px;
-  right: 620px;
-  height: 120px;
+.mane-box-W:nth-of-type(14) {
+  transform: translate(-170px,230px);
 }
-.mane-box-W:nth-of-type(15) {
-  position: relative;
-  top: 150px;
-  left: 170px;
+.mane-box-H:nth-of-type(15) {
+  transform: translate(-470px,280px);
+  height: 100px;
 }
 .mane-box-H:nth-of-type(16) {
-  position: relative;
-  height: 120px;
-  top: 200px;
-  right: 120px;
+  transform: translate(-700px,340px);
+  height: 100px;
 }
 .mane-box-W:nth-of-type(17) {
-  position: relative;
-  top: 180px;
-  left: 600px;
+  transform: translate(200px,180px);
 }
-.mane-box-W:nth-of-type(18) {
-  position: relative;
-  top: 230px;
-  left: 670px;
-  width: 140px;
-}
-.mane-box-H:nth-of-type(19) {
+.mane-box-H:nth-of-type(18) {
+  transform: translate(-100px,230px);
   height: 120px;
-  position: relative;
-  top: 410px;
-  left: 450px;
+}
+.mane-box-W:nth-of-type(19) {
+  transform: translate(700px,230px);
+  width: 100px;
 }
 .mane-box-W:nth-of-type(20) {
-  position: relative;
-  top: 310px;
-  left: 200px;
+  transform: translate(870px,268px);
+  width: 100px;
 }
 .mane-box-H:nth-of-type(21) {
-  position: relative;
-  top: 310px;
+  transform: translate(650px,430px);
   height: 100px;
-  right: 60px;
 }
-.mane-box-H:nth-of-type(22) {
-  position: relative;
-  top: 400px;
+.mane-box-W:nth-of-type(22) {
+  transform: translate(400px,350px);
+  width: 120px;
+}
+.mane-box-H:nth-of-type(23) {
   height: 100px;
-  right: 170px;
+  transform: translate(120px,350px);
 }
-.mane-box-W:nth-of-type(23) {
-  position: relative;
-  top: 280px;
-  right: 434px;
+.mane-box-H:nth-of-type(24) {
+  height: 80px;
+  transform: translate(-10px,430px);
 }
-.mane-box-W:nth-of-type(24) {
-  position: relative;
-  top: 430px;
-  right: 640px;
+.mane-box-W:nth-of-type(25) {
+  transform: translate(-300px,300px);
 }
-.mane-box-H:nth-of-type(25) {
-  position: relative;
-  top: 350px;
-  height: 100px;
-  right: 900px;
+.mane-box-W:nth-of-type(26) {
+  transform: translate(-500px,420px);
+}
+.mane-box-H:nth-of-type(27) {
+  height: 70px;
+  transform: translate(-800px,420px);
 }
 /* css code properties divarha [END] */

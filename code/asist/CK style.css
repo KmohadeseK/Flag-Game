@@ -3,7 +3,6 @@
     display: inline-block;
     width: 54px;
     background-repeat: no-repeat;
-    position: relative;
     background-image:url(img/PL1/normalRight.png);
     height: 93px;
     animation-duration: 1s;
@@ -38,7 +37,6 @@
   display: inline-block;
   width: 54px;
   background-repeat: no-repeat;
-  position: relative;
   background-image:url(img/PL2/normalLeft.png);
   height: 93px;
   animation-duration: 1s;
