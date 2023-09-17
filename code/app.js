@@ -40,8 +40,6 @@ let iskeyPressed = false;
 function animationmovePL2(e) {
   // select mohgaeyat makani
   const road = overlapGroup.getBoundingClientRect();
-  console.log(road);
-
   // key press
   if (iskeyPressed) {
     // if == move CK ba key
@@ -185,6 +183,22 @@ function animationmovePL1Stop(e) {
   }
 }
 
-// code of mane [start]
-let maneH = document.querySelector(".mane-box-H");
-let maneW = document.querySelector(".mane-box-W");
+// ------manster [start]-------
+document.addEventListener("keydown", mansterMove);
+document.addEventListener("keyup", mansterMovestop);
+let manster = document.querySelector(".manster");
+function mansterMove(e) {
+  console.log(e.keyCode);
+  // move left anm
+  if (e.keyCode == 65 || e.keyCode == 37 && document.getElementsByClassName == "manster") {
+    manster = document.querySelector(".manster").style.backgroundImage ="url(asist/img/labas-monster/monsterNormalLeft.png)"
+
+    PL1 = document.querySelector(".manster").style.animationName = "mansterleft";
+  }
+}
+
+
+
+function mansterMovestop(e) {
+
+}

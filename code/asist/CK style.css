@@ -39,6 +39,7 @@
 /* css code aks player2 [START] */
 .PL2{
   background-image:url(img/PL2/normalLeft.png);
+  transform: translate(1100px, 500px);
 }
 /* css code properties player2 [END] */
 /* move PL2 [start]*/
@@ -65,3 +66,59 @@
     }
 }
 /* move PL2 [end]*/
+/* manster code start */
+
+.manster{
+    background-image: url(img/labas-monster/monsterNormalLeft.png);
+    display: inline-block;
+    height: 93px;
+    animation-duration: .6s;
+    animation-iteration-count: infinite ;
+    background-repeat: no-repeat;
+    width: 54px;
+    position: relative;
+}
+@keyframes mansterRghit {
+    33%{
+        background-image: url(img/labas-monster/RUN-right/1.png);
+    }
+    66%{
+        background-image: url(img/labas-monster/RUN-right/2.png);
+    }
+    99%{
+        background-image: url(img/labas-monster/RUN-right/3.png);
+    }
+}
+@keyframes mansterleft {
+    33%{
+        background-image: url(img/labas-monster/RUN-left/1.png);
+    }
+    66%{
+        background-image: url(img/labas-monster/RUN-left/2.png);
+    }
+    99%{
+        background-image: url(img/labas-monster/RUN-left/3.png);
+    }
+}
+@keyframes attkleft {
+    33%{
+        background-image: url(img/labas-monster/attk-left/1.png);
+    }
+    66%{
+        background-image: url(img/labas-monster/attk-left/2.png);
+    }
+    99%{
+        background-image: url(img/labas-monster/attk-left/3.png);
+    }
+}
+@keyframes attkright {
+    33%{
+        background-image: url(img/labas-monster/attk-right/1.png);
+    }
+    66%{
+        background-image: url(img/labas-monster/attk-right/2.png);
+    }
+    99%{
+        background-image: url(img/labas-monster/attk-right/3.png);
+    }
+}
