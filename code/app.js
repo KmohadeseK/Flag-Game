@@ -195,6 +195,11 @@ function mansterMove(e) {
 
     PL1 = document.querySelector(".manster").style.animationName = "mansterleft";
   }
+  else if (e.keyCode == 68 || e.keyCode == 39 && document.getElementsByClassName == "manster") {
+    manster = document.querySelector(".manster").style.backgroundImage ="url(asist/img/labas-monster/monsterNormalRight.png)"
+
+    PL1 = document.querySelector(".manster").style.animationName = "mansterRghit";
+  }
 }
 
 
