@@ -19,7 +19,7 @@ function startTime() {
 // -----=animation PL2 move=-----
 
 // select safeh bazi
-let overlapGroup = document.querySelector(".overlap-group");
+let overlapGroup = document.querySelector(".macbook-air");
 
 document.addEventListener("keydown", animationmovePL2);
 document.addEventListener("keyup", animationmovePL2Stop);
@@ -40,10 +40,11 @@ let iskeyPressed = false;
 function animationmovePL2(e) {
   // select mohgaeyat makani
   const road = overlapGroup.getBoundingClientRect();
+  console.log(road)
   // key press
   if (iskeyPressed) {
     // if == move CK ba key
-    if (e.keyCode == 65 && PL2LeftMove > 0) {
+    if (e.keyCode == 65 && PL2LeftMove > -1108) {
       // move PL2 left
       PL2LeftMove -= 10;
       PL2 = document.querySelector(".PL2").style.left = PL2LeftMove + "px";
@@ -53,7 +54,7 @@ function animationmovePL2(e) {
         "move-left-run-PL2";
       PL2 = document.querySelector(".PL2").style.backgroundImage =
         "url(asist/img/PL2/normalleft.png)";
-    } else if (e.keyCode == 68 && PL2LeftMove < 1210) {
+    } else if (e.keyCode == 68 && PL2LeftMove < 110) {
       // move PL2 right
       PL2LeftMove += 10;
       PL2 = document.querySelector(".PL2").style.left = PL2LeftMove + "px";
@@ -63,13 +64,13 @@ function animationmovePL2(e) {
         "move-right-run-PL2";
       PL2 = document.querySelector(".PL2").style.backgroundImage =
         "url(asist/img/PL2/normalRight.png)";
-    } else if (e.keyCode == 87 && PL2TopMove > -57) {
+    } else if (e.keyCode == 87 && PL2TopMove > -553) {
       // move PL2 top
       PL2TopMove -= 10;
       PL2 = document.querySelector(".PL2").style.top = PL2TopMove + "px";
 
       // move animation
-    } else if (e.keyCode == 83 && PL2TopMove < 530) {
+    } else if (e.keyCode == 83 && PL2TopMove < 30) {
       // move PL2 btoom
       PL2TopMove += 10;
       PL2 = document.querySelector(".PL2").style.top = PL2TopMove + "px";
