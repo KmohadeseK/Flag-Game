@@ -55,9 +55,18 @@
 /* css code properties start [START] */
 #start {
   position: absolute;
-  top: 90px;
+  top: 85px;
   left: 588px;
   width: 100px;
+  height: 24px;
+  background-color: rgb(156, 43, 156);
+  color: rgb(190, 190, 190);
+  border: white solid 1px ;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#start:hover{
+  background-color: rgba(156, 43, 156, 0.495);
 }
 /* css code properties start[END] */
 

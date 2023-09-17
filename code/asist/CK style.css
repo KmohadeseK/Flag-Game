@@ -69,7 +69,7 @@
 /* manster code start */
 
 .manster{
-    background-image: url(img/labas-monster/monsterNormalLeft.png);
+    background-image: url(img/labas-monster/monsterNormalLeft.png) ;
     display: inline-block;
     height: 93px;
     animation-duration: .6s;
