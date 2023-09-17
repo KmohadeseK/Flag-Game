@@ -40,7 +40,7 @@ let iskeyPressed = false;
 function animationmovePL2(e) {
   // select mohgaeyat makani
   const road = overlapGroup.getBoundingClientRect();
-  console.log(road)
+
   // key press
   if (iskeyPressed) {
     // if == move CK ba key
@@ -241,5 +241,24 @@ function mansterMovestop(e) {
     manster = document.querySelector(".manster").style.backgroundImage ="url(asist/img/labas-monster/monsterNormalRight.png)"
 
     PL1 = document.querySelector(".manster").style.animationName = "none";
+  }
+}
+
+function isCollide (a,b){
+  let aRect = a.getBoundingClientRect();
+  let bRect = b.getBoundingClientRect();
+
+  return !(
+    (aRect.bottom < bRect.top) ||
+    (aRect.top > bRect.bottom) ||
+    (aRect.right < bRect.left) ||
+    (aRect.left > bRect.right) 
+  )
+}
+
+function moveEnemy (pL1,pL2){
+  let enemies = document.querySelectorAll('.mane');
+  if(isCollide(pL1,pL2,enemies)){
+    console.log('hit');
   }
 }
