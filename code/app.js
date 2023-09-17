@@ -5,6 +5,8 @@
 
 // code function brai start v setTime [START]
 function startTime() {
+  let PL2Winer = 0;
+  let PL1Winer = 0;
   let time = 45;
   let countDown = setInterval(function () {
     // time braber ba 0
@@ -13,10 +15,45 @@ function startTime() {
     }
     // select kardn timer
     document.querySelector(".timer").innerHTML = time--;
+    // -----timer 0 shod game END-----
+    if (document.querySelector(".timer").innerHTML == 0) {
+      if (PL2Winer == 1) {
+        // PL2 winer
+        alert(
+          "بازیکن شماره 2 همون پرچم دار برد فشار فشار بخور نوب با شمشیر نتونستی بزنیش ؟ نوب ..."
+        );
+
+        PL2 = document.querySelector(".PL2").style.top = null;
+        PL2 = document.querySelector(".PL2").style.left = null;
+
+        PL1 = document.querySelector(".PL1").style.top = null;
+        PL1 = document.querySelector(".PL1").style.left = null;
+
+        // flager PL2
+        PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2");
+        PL2Winer = 1;
+        // monster PL1
+        PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1");
+      } else if (PL1Winer == 1) {
+        // PL2 winer
+        alert(
+          "بازیکن شماره1  همون پرچم دار برد فشار فشار بخور نوب با شمشیر نتونستی بزنیش ؟ نوب ..."
+        );
+
+        PL2 = document.querySelector(".PL2").style.top = null;
+        PL2 = document.querySelector(".PL2").style.left = null;
+
+        PL1 = document.querySelector(".PL1").style.top = null;
+        PL1 = document.querySelector(".PL1").style.left = null;
+
+        PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2");
+
+        PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1");
+      }
+    }
   }, 1000);
 }
 
-// -----=animation PL2 move=-----
 // ----------code of random monster or flager----------
 // slect PL2
 let PL2 = document.querySelector(".PL2");
@@ -25,16 +62,18 @@ let PL1 = document.querySelector(".PL1");
 monsterFlag = Math.floor(Math.random() * 2);
 if (monsterFlag == 1) {
   // flager PL2
-  PL2 = document.querySelector(".PL2").setAttribute("class", " PL2 flag");
+  PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2 flag");
+  PL2Winer = 1;
   // monster PL1
-  PL1 = document.querySelector(".PL1").setAttribute("class", " PL1 manster");
+  PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1 manster");
 } else if (monsterFlag == 0) {
   // flager PL2
-  PL1 = document.querySelector(".PL1").setAttribute("class", " PL1 flag");
+  PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1 flag");
   // monster PL1
-  PL2 = document.querySelector(".PL2").setAttribute("class", " PL2 manster");
+  PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2 manster");
+  PL1Winer = 1;
 }
-
+// -----=animation PL2 move=-----
 // select safeh bazi
 let overlapGroup = document.querySelector(".macbook-air");
 
@@ -97,7 +136,7 @@ function animationmovePL2(e) {
       alert("میخوای از صفحه بپره بیرون بیاد پیشت ؟");
       spaceAlki += 1;
     } else if (spaceAlki == 1) {
-      alert("ببین بیا منظقی بهش فکر کنیم چطوری انتظار داری بپره ؟");
+      alert("ببین بیا منظقی بهش فکر کنیم چطوری انتظار داری بپره   ؟");
       spaceAlki += 1;
     } else if (spaceAlki == 2) {
       alert("ما اینجا داریم زحمت میکشیم ...");
@@ -202,13 +241,12 @@ document.addEventListener("keyup", mansterMovestop);
 let manster = document.querySelector(".manster");
 function mansterMove(e) {
   // move left anm
-  console.log(e.keyCode);
   if (
     (e.keyCode == 65) & (monsterFlag == 0) ||
     (e.keyCode == 37) & (monsterFlag == 1)
   ) {
     manster = document.querySelector(".manster").style.backgroundImage =
-      "url(asist/img/labas-monster/monsterNormalLeft.png)";
+      "url(asist/img/labas-monster/ monsterNormalLeft.png)";
 
     PL1 = document.querySelector(".manster").style.animationName =
       "mansterleft";
@@ -219,7 +257,7 @@ function mansterMove(e) {
     (e.keyCode == 39 && monsterFlag == 1)
   ) {
     manster = document.querySelector(".manster").style.backgroundImage =
-      "url(asist/img/labas-monster/monsterNormalRight.png)";
+      "url(asist/img/labas-monster/ monsterNormalRight.png)";
 
     PL1 = document.querySelector(".manster").style.animationName =
       "mansterRghit";
@@ -227,14 +265,14 @@ function mansterMove(e) {
   // attk right
   else if (e.keyCode == 75) {
     manster = document.querySelector(".manster").style.backgroundImage =
-      "url(asist/img/labas-monster/monsterNormalRight.png)";
+      "url(asist/img/labas-monster/ monsterNormalRight.png)";
 
     PL1 = document.querySelector(".manster").style.animationName = "attkleft";
   }
   // atkk left
   else if (e.keyCode == 76) {
     manster = document.querySelector(".manster").style.backgroundImage =
-      "url(asist/img/labas-monster/monsterNormalLeft.png)";
+      "url(asist/img/labas-monster/ monsterNormalLeft.png)";
 
     PL1 = document.querySelector(".manster").style.animationName = "attkright";
   }
@@ -246,7 +284,7 @@ function mansterMovestop(e) {
     (e.keyCode == 37 && monsterFlag == 1)
   ) {
     manster = document.querySelector(".manster").style.backgroundImage =
-      "url(asist/img/labas-monster/monsterNormalLeft.png)";
+      "url(asist/img/labas-monster/ monsterNormalLeft.png)";
 
     PL1 = document.querySelector(".manster").style.animationName = "none";
   }
@@ -256,21 +294,21 @@ function mansterMovestop(e) {
     (e.keyCode == 39 && monsterFlag == 1)
   ) {
     manster = document.querySelector(".manster").style.backgroundImage =
-      "url(asist/img/labas-monster/monsterNormalRight.png)";
+      "url(asist/img/labas-monster/ monsterNormalRight.png)";
 
     PL1 = document.querySelector(".manster").style.animationName = "none";
   }
   // attk right
   else if (e.keyCode == 75) {
     manster = document.querySelector(".manster").style.backgroundImage =
-      "url(asist/img/labas-monster/monsterNormalLeft.png)";
+      "url(asist/img/labas-monster/ monsterNormalLeft.png)";
 
     PL1 = document.querySelector(".manster").style.animationName = "none";
   }
   // atkk left
   else if (e.keyCode == 76) {
     manster = document.querySelector(".manster").style.backgroundImage =
-      "url(asist/img/labas-monster/monsterNormalRight.png)";
+      "url(asist/img/labas-monster/ monsterNormalRight.png)";
 
     PL1 = document.querySelector(".manster").style.animationName = "none";
   }
@@ -281,4 +319,3 @@ function rahnma() {
     "سلام خیلی خوش آمدید . بازی ما به این شکل است که کاراکتر اول ما با جهات (فلش ها) کار میکنه و کاراکتر دوم ما با حروف w ,d,a,s  کار میکند و برای استفاده از شمشیر از حروف k,L استفاده کنید امیدوارم از بازی لذت کامل رو ببرید."
   );
 }
-
