@@ -195,15 +195,50 @@ function mansterMove(e) {
 
     PL1 = document.querySelector(".manster").style.animationName = "mansterleft";
   }
+  // move right 
   else if (e.keyCode == 68 || e.keyCode == 39 && document.getElementsByClassName == "manster") {
     manster = document.querySelector(".manster").style.backgroundImage ="url(asist/img/labas-monster/monsterNormalRight.png)"
 
     PL1 = document.querySelector(".manster").style.animationName = "mansterRghit";
+  }
+  // attk right 
+  else if (e.keyCode == 75  ) {
+    manster = document.querySelector(".manster").style.backgroundImage ="url(asist/img/labas-monster/monsterNormalRight.png)"
+
+    PL1 = document.querySelector(".manster").style.animationName = "attkleft";
+  }
+  // atkk left
+  else if (e.keyCode == 76  ) {
+    manster = document.querySelector(".manster").style.backgroundImage ="url(asist/img/labas-monster/monsterNormalLeft.png)"
+
+    PL1 = document.querySelector(".manster").style.animationName = "attkright";
   }
 }
 
 
 
 function mansterMovestop(e) {
+  if (e.keyCode == 65 || e.keyCode == 37 && document.getElementsByClassName == "manster") {
+    manster = document.querySelector(".manster").style.backgroundImage ="url(asist/img/labas-monster/monsterNormalLeft.png)"
 
+    PL1 = document.querySelector(".manster").style.animationName = "none";
+  }
+  // move right 
+  else if (e.keyCode == 68 || e.keyCode == 39 && document.getElementsByClassName == "manster") {
+    manster = document.querySelector(".manster").style.backgroundImage ="url(asist/img/labas-monster/monsterNormalRight.png)"
+
+    PL1 = document.querySelector(".manster").style.animationName = "none";
+  }
+  // attk right 
+  else if (e.keyCode == 75) {
+    manster = document.querySelector(".manster").style.backgroundImage ="url(asist/img/labas-monster/monsterNormalLeft.png)"
+
+    PL1 = document.querySelector(".manster").style.animationName = "none";
+  }
+  // atkk left
+  else if (e.keyCode == 76  ) {
+    manster = document.querySelector(".manster").style.backgroundImage ="url(asist/img/labas-monster/monsterNormalRight.png)"
+
+    PL1 = document.querySelector(".manster").style.animationName = "none";
+  }
 }
