@@ -122,3 +122,9 @@
         background-image: url(img/labas-monster/attk-right/3.png);
     }
 }
+/* code of flag */
+.flag::after{
+    content: url(img/flag.png);
+    position: absolute;
+    left: -27px;
+}
