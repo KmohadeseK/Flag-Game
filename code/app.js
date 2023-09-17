@@ -5,8 +5,8 @@
 
 // code function brai start v setTime [START]
 function startTime() {
-  let PL2Winer = 0;
-  let PL1Winer = 0;
+  let PL2Winer = 0
+  let PL1Winer = 0
   let time = 45;
   let countDown = setInterval(function () {
     // time braber ba 0
@@ -14,47 +14,42 @@ function startTime() {
       clearInterval(countDown);
     }
     // select kardn timer
-    document.querySelector(".timer").innerHTML = time--;
-    // -----timer 0 shod game END-----
-    if (document.querySelector(".timer").innerHTML == 0) {
-      if (PL2Winer == 1) {
-        // PL2 winer
-        alert(
-          "بازیکن شماره 2 همون پرچم دار برد فشار فشار بخور نوب با شمشیر نتونستی بزنیش ؟ نوب ..."
-        );
+  document.querySelector(".timer").innerHTML = time--;
+  // -----timer 0 shod game END-----
+  if(document.querySelector(".timer").innerHTML == 0){
+    if(PL2Winer == 1){
+      // PL2 winer
+      alert("player1(flager) is wins")
+      PL2 = document.querySelector(".PL2").style.top =  null;
+      PL2 = document.querySelector(".PL2").style.left =  null;
 
-        PL2 = document.querySelector(".PL2").style.top = null;
-        PL2 = document.querySelector(".PL2").style.left = null;
+      PL1 = document.querySelector(".PL1").style.top =  null;
+      PL1 = document.querySelector(".PL1").style.left =  null;
 
-        PL1 = document.querySelector(".PL1").style.top = null;
-        PL1 = document.querySelector(".PL1").style.left = null;
-
-        // flager PL2
-        PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2");
-        PL2Winer = 1;
-        // monster PL1
-        PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1");
-      } else if (PL1Winer == 1) {
-        // PL2 winer
-        alert(
-          "بازیکن شماره1  همون پرچم دار برد فشار فشار بخور نوب با شمشیر نتونستی بزنیش ؟ نوب ..."
-        );
-
-        PL2 = document.querySelector(".PL2").style.top = null;
-        PL2 = document.querySelector(".PL2").style.left = null;
-
-        PL1 = document.querySelector(".PL1").style.top = null;
-        PL1 = document.querySelector(".PL1").style.left = null;
-
-        PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2");
-
-        PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1");
-      }
+      // flager PL2
+      PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2")
+    PL2Winer = 1
+    // monster PL1
+     PL1 = document.querySelector(".PL1").setAttribute("class",  "  PL1")
     }
-  }, 1000);
-}
+    else if(PL1Winer == 1){
+      // PL2 winer
+      alert("player2(flager) is wins")
+      PL2 = document.querySelector(".PL2").style.top =  null;
+      PL2 = document.querySelector(".PL2").style.left =  null;
 
-// ----------code of random monster or flager----------
+      PL1 = document.querySelector(".PL1").style.top =  null;
+      PL1 = document.querySelector(".PL1").style.left =  null;
+
+      PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2")
+
+      PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1")
+    }
+    
+  }
+  }, 1000);
+
+  // ----------code of random monster or flager----------
 // slect PL2
 let PL2 = document.querySelector(".PL2");
 // slect PL1
@@ -319,3 +314,6 @@ function rahnma() {
     "سلام خیلی خوش آمدید . بازی ما به این شکل است که کاراکتر اول ما با جهات (فلش ها) کار میکنه و کاراکتر دوم ما با حروف w ,d,a,s  کار میکند و برای استفاده از شمشیر از حروف k,L استفاده کنید امیدوارم از بازی لذت کامل رو ببرید."
   );
 }
+
+}
+
