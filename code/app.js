@@ -29,7 +29,7 @@ function startTime() {
 
       // flager PL2
       PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2")
-    PL2Winer = 1
+      monsterFlag = 0;
     // monster PL1
      PL1 = document.querySelector(".PL1").setAttribute("class",  "  PL1")
     }
@@ -46,6 +46,7 @@ function startTime() {
       PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2")
 
       PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1")
+      monsterFlag = 0;
     }
     
   }
