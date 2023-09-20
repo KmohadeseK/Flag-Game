@@ -63,13 +63,13 @@ function startTime() {
     PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2 flag")
     PL2Winer = 1
     // monster PL1
-    PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1 manster")
+    PL1 = document.querySelector(".PL1").setAttribute("class", "manster PL1")
   }
   else if(monsterFlag == 0){
     // flager PL2
     PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1 flag")
     // monster PL1
-    PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2 manster")
+    PL2 = document.querySelector(".PL2").setAttribute("class", " manster PL2 ")
     PL1Winer = 1
 
   }
@@ -273,25 +273,25 @@ function startTime() {
 
   function mansterMovestop(e) {
     if ((e.keyCode == 65 && monsterFlag == 0)|| (e.keyCode ==   37 && monsterFlag == 1) ) {
-      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/ monsterNormalLeft.png)"
+      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/monsterNormalLeft.png)"
 
       PL1 = document.querySelector(".manster").style. animationName = "none";
     }
     // move right 
     else if ((e.keyCode == 68 && monsterFlag == 0) || (e.keyCode   == 39 && monsterFlag == 1) ) {
-      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/ monsterNormalRight.png)"
+      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/monsterNormalRight.png)"
 
       PL1 = document.querySelector(".manster").style. animationName = "none";
     }
     // attk right 
     else if (e.keyCode == 75) {
-      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/ monsterNormalLeft.png)"
+      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/monsterNormalLeft.png)"
 
       PL1 = document.querySelector(".manster").style. animationName = "none";
     }
     // atkk left
     else if (e.keyCode == 76  ) {
-      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/ monsterNormalRight.png)"
+      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/monsterNormalRight.png)"
 
       PL1 = document.querySelector(".manster").style. animationName = "none";
     }
