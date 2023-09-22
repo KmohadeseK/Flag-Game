@@ -93,6 +93,7 @@ function startTime() {
   let iskeyPressed = false;
 
   function animationmovePL2(e) {
+  
     // select mohgaeyat makani
     const road = overlapGroup.getBoundingClientRect();
     // key press
@@ -298,26 +299,11 @@ function startTime() {
       PL1 = document.querySelector(".manster").style. animationName = "none";
     }
   }
+
+let mane = document.querySelectorAll('.mane')
 }
 
-function isCollide (a,b){
-  let aRect = a.getBoundingClientRect();
-  let bRect = b.getBoundingClientRect();
 
-  return !(
-    (aRect.bottom < bRect.top) ||
-    (aRect.top > bRect.bottom) ||
-    (aRect.right < bRect.left) ||
-    (aRect.left > bRect.right) 
-  )
-}
-
-function moveEnemy (pL1,pL2){
-  let enemies = document.querySelectorAll('.mane');
-  if(isCollide(pL1,pL2,enemies)){
-    console.log('hit');
-  }
-}
 
 function rahnma() {
   alert(
