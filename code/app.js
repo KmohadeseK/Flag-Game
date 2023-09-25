@@ -40,7 +40,6 @@ function startTime() {
         PL2 = document.querySelector(".PL2").style.top = null;
         PL2 = document.querySelector(".PL2").style.left = null;
 
-      PL1 = document.querySelector(".PL1").style.left =  null;
         PL1 = document.querySelector(".PL1").style.top = null;
         PL1 = document.querySelector(".PL1").style.left = null;
 
