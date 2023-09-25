@@ -14,42 +14,43 @@ function startTime() {
       clearInterval(countDown);
     }
     // select kardn timer
-  document.querySelector(".timer").innerHTML = time--;
-  // -----timer 0 shod game END-----
-  if(document.querySelector(".timer").innerHTML == 0){
-    if(PL2Winer == 1){
-      // PL2 winer
-      alert("بازیکن شماره 2 همون پرچم دار برد فشار فشار بخور نوب با شمشیر نتونستی بزنیش ؟ نوب ...")
+    document.querySelector(".timer").innerHTML = time--;
+    // -----timer 0 shod game END-----
+    if (document.querySelector(".timer").innerHTML == 0) {
+      if (PL2Winer == 1) {
+        // PL2 winer
+        alert("بازیکن شماره 2 همون پرچم دار برد فشار فشار بخور نوب با شمشیر نتونستی بزنیش ؟ نوب ...")
 
-      PL2 = document.querySelector(".PL2").style.top =  null;
-      PL2 = document.querySelector(".PL2").style.left =  null;
+        PL2 = document.querySelector(".PL2").style.top = null;
+        PL2 = document.querySelector(".PL2").style.left = null;
 
-      PL1 = document.querySelector(".PL1").style.top =  null;
+        PL1 = document.querySelector(".PL1").style.top = null;
+        PL1 = document.querySelector(".PL1").style.left = null;
+
+        // flager PL2
+        PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2")
+        monsterFlag = 0;
+        // monster PL1
+        PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1")
+      }
+      else if (PL1Winer == 1) {
+        // PL2 winer
+        alert(":/بازیکن شماره1  همون پرچم دار برد فشار فشار بخور نوب با شمشیر نتونستی بزنیش ؟ نوب ...")
+
+        PL2 = document.querySelector(".PL2").style.top = null;
+        PL2 = document.querySelector(".PL2").style.left = null;
+
       PL1 = document.querySelector(".PL1").style.left =  null;
+        PL1 = document.querySelector(".PL1").style.top = null;
+        PL1 = document.querySelector(".PL1").style.left = null;
 
-      // flager PL2
-      PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2")
-      monsterFlag = 0;
-    // monster PL1
-     PL1 = document.querySelector(".PL1").setAttribute("class",  "  PL1")
+        PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2")
+
+        PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1")
+        monsterFlag = 0;
+      }
+
     }
-    else if(PL1Winer == 1){
-      // PL2 winer
-      alert("بازیکن شماره1  همون پرچم دار برد فشار فشار بخور نوب با شمشیر نتونستی بزنیش ؟ نوب ...")
-
-      PL2 = document.querySelector(".PL2").style.top =  null;
-      PL2 = document.querySelector(".PL2").style.left =  null;
-
-      PL1 = document.querySelector(".PL1").style.top =  null;
-      PL1 = document.querySelector(".PL1").style.left =  null;
-
-      PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2")
-
-      PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1")
-      monsterFlag = 0;
-    }
-    
-  }
   }, 1000);
 
 
@@ -59,14 +60,14 @@ function startTime() {
   // slect PL1
   let PL1 = document.querySelector(".PL1");
   monsterFlag = Math.floor(Math.random() * 2)
-  if(monsterFlag == 1){
+  if (monsterFlag == 1) {
     // flager PL2
     PL2 = document.querySelector(".PL2").setAttribute("class", "  PL2 flag")
     PL2Winer = 1
     // monster PL1
     PL1 = document.querySelector(".PL1").setAttribute("class", "manster PL1")
   }
-  else if(monsterFlag == 0){
+  else if (monsterFlag == 0) {
     // flager PL2
     PL1 = document.querySelector(".PL1").setAttribute("class", "  PL1 flag")
     // monster PL1
@@ -94,7 +95,7 @@ function startTime() {
   let iskeyPressed = false;
 
   function animationmovePL2(e) {
-  
+
     // select mohgaeyat makani
     const road = overlapGroup.getBoundingClientRect();
     // key press
@@ -103,33 +104,33 @@ function startTime() {
       if (e.keyCode == 65 && PL2LeftMove > -1108) {
         // move PL2 left
         PL2LeftMove -= 10;
-        PL2 = document.querySelector(".PL2").style.left =   PL2LeftMove + "px";
+        PL2 = document.querySelector(".PL2").style.left = PL2LeftMove + "px";
 
         // move animation
         PL2 = document.querySelector(".PL2").style.animationName =
           "move-left-run-PL2";
-        PL2 = document.querySelector(".PL2").style. backgroundImage =
+        PL2 = document.querySelector(".PL2").style.backgroundImage =
           "url(asist/img/PL2/normalleft.png)";
       } else if (e.keyCode == 68 && PL2LeftMove < 110) {
         // move PL2 right
         PL2LeftMove += 10;
-        PL2 = document.querySelector(".PL2").style.left =   PL2LeftMove + "px";
+        PL2 = document.querySelector(".PL2").style.left = PL2LeftMove + "px";
 
         // move animation
         PL2 = document.querySelector(".PL2").style.animationName =
           "move-right-run-PL2";
-        PL2 = document.querySelector(".PL2").style. backgroundImage =
+        PL2 = document.querySelector(".PL2").style.backgroundImage =
           "url(asist/img/PL2/normalRight.png)";
       } else if (e.keyCode == 87 && PL2TopMove > -553) {
         // move PL2 top
         PL2TopMove -= 10;
-        PL2 = document.querySelector(".PL2").style.top =  PL2TopMove + "px";
+        PL2 = document.querySelector(".PL2").style.top = PL2TopMove + "px";
 
         // move animation
       } else if (e.keyCode == 83 && PL2TopMove < 30) {
         // move PL2 btoom
         PL2TopMove += 10;
-        PL2 = document.querySelector(".PL2").style.top =  PL2TopMove + "px";
+        PL2 = document.querySelector(".PL2").style.top = PL2TopMove + "px";
         // move animation
       }
 
@@ -160,7 +161,7 @@ function startTime() {
   });
 
   // select keyup bra sound
-  document.addEventListener('keyup',function(){
+  document.addEventListener('keyup', function () {
     iskeyPressed = false;
     sound.pause();
   })
@@ -169,11 +170,11 @@ function startTime() {
   function animationmovePL2Stop(e) {
     // if == stop move animation CK
     if (e.keyCode == 65) {
-      PL2 = document.querySelector(".PL2").style.animationName =  "none";
+      PL2 = document.querySelector(".PL2").style.animationName = "none";
       PL2 = document.querySelector(".PL2").style.backgroundImage =
         "url(asist/img/PL2/normalleft.png)";
     } else if (e.keyCode == 68) {
-      PL2 = document.querySelector(".PL2").style.animationName =  "none";
+      PL2 = document.querySelector(".PL2").style.animationName = "none";
       PL2 = document.querySelector(".PL2").style.backgroundImage =
         "url(asist/img/PL2/normalRight.png)";
     }
@@ -195,7 +196,7 @@ function startTime() {
     if (e.keyCode == "37" && PL1LeftMove > -42) {
       // move CK left
       PL1LeftMove -= 10;
-      PL1 = document.querySelector(".PL1").style.left =   PL1LeftMove + "px";
+      PL1 = document.querySelector(".PL1").style.left = PL1LeftMove + "px";
 
       PL1 = document.querySelector(".PL1").style.backgroundImage =
         "url(asist/img/PL1/normalLeft.png)";
@@ -205,7 +206,7 @@ function startTime() {
     } else if (e.keyCode == "39" && PL1LeftMove < 1149) {
       // move CK right
       PL1LeftMove += 10;
-      PL1 = document.querySelector(".PL1").style.left =   PL1LeftMove + "px";
+      PL1 = document.querySelector(".PL1").style.left = PL1LeftMove + "px";
 
       PL1 = document.querySelector(".PL1").style.animationName =
         "move-right-run-PL1";
@@ -215,11 +216,11 @@ function startTime() {
     } else if (e.keyCode == "38" && PL1TopMove > -50) {
       // move top
       PL1TopMove -= 10;
-      PL1 = document.querySelector(".PL1").style.top = PL1TopMove   + "px";
+      PL1 = document.querySelector(".PL1").style.top = PL1TopMove + "px";
     } else if (e.keyCode == "40" && PL1TopMove < 530) {
       // move bttom
       PL1TopMove += 10;
-      PL1 = document.querySelector(".PL1").style.top = PL1TopMove   + "px";
+      PL1 = document.querySelector(".PL1").style.top = PL1TopMove + "px";
     }
   }
 
@@ -227,12 +228,12 @@ function startTime() {
   function animationmovePL1Stop(e) {
     // if == stop move animation CK
     if (e.keyCode == "37") {
-      PL1 = document.querySelector(".PL1").style.animationName =  "none";
+      PL1 = document.querySelector(".PL1").style.animationName = "none";
 
       PL1 = document.querySelector(".PL1").style.backgroundImage =
         "url(asist/img/PL1/normalLeft.png)";
     } else if (e.keyCode == "39") {
-      PL1 = document.querySelector(".PL1").style.animationName =  "none";
+      PL1 = document.querySelector(".PL1").style.animationName = "none";
 
       PL1 = document.querySelector(".PL1").style.backgroundImage =
         "url(asist/img/PL1/normalRight.png)";
@@ -244,64 +245,64 @@ function startTime() {
   document.addEventListener("keyup", mansterMovestop);
   let manster = document.querySelector(".manster");
   function mansterMove(e) {
-    
-    // move left anm
-    if ((e.keyCode == 65 & monsterFlag == 0)|| (e.keyCode == 37 &   monsterFlag == 1)) {
-      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/monsterNormalLeft.png)"
 
-      PL1 = document.querySelector(".manster").style. animationName = "mansterleft";
+    // move left anm
+    if ((e.keyCode == 65 & monsterFlag == 0) || (e.keyCode == 37 & monsterFlag == 1)) {
+      manster = document.querySelector(".manster").style.backgroundImage = "url(asist/img/labas-monster/monsterNormalLeft.png)"
+
+      PL1 = document.querySelector(".manster").style.animationName = "mansterleft";
     }
     // move right 
-    else if ((e.keyCode == 68 && monsterFlag == 0) || (e.keyCode  == 39 && monsterFlag == 1)) {
-      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/monsterNormalRight.png)"
+    else if ((e.keyCode == 68 && monsterFlag == 0) || (e.keyCode == 39 && monsterFlag == 1)) {
+      manster = document.querySelector(".manster").style.backgroundImage = "url(asist/img/labas-monster/monsterNormalRight.png)"
 
-      PL1 = document.querySelector(".manster").style. animationName = "mansterRghit";
+      PL1 = document.querySelector(".manster").style.animationName = "mansterRghit";
     }
     // attk right 
-    else if (e.keyCode == 75  ) {
-      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/monsterNormalRight.png)"
+    else if (e.keyCode == 75) {
+      manster = document.querySelector(".manster").style.backgroundImage = "url(asist/img/labas-monster/monsterNormalRight.png)"
 
-     
 
-      PL1 = document.querySelector(".manster").style. animationName = "attkleft";
+
+      PL1 = document.querySelector(".manster").style.animationName = "attkleft";
     }
     // atkk left
-    else if (e.keyCode == 76  ) {
-      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/monsterNormalLeft.png)"
+    else if (e.keyCode == 76) {
+      manster = document.querySelector(".manster").style.backgroundImage = "url(asist/img/labas-monster/monsterNormalLeft.png)"
 
-      PL1 = document.querySelector(".manster").style. animationName = "attkright";
+      PL1 = document.querySelector(".manster").style.animationName = "attkright";
     }
   }
 
 
 
   function mansterMovestop(e) {
-    if ((e.keyCode == 65 && monsterFlag == 0)|| (e.keyCode ==   37 && monsterFlag == 1) ) {
-      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/monsterNormalLeft.png)"
+    if ((e.keyCode == 65 && monsterFlag == 0) || (e.keyCode == 37 && monsterFlag == 1)) {
+      manster = document.querySelector(".manster").style.backgroundImage = "url(asist/img/labas-monster/monsterNormalLeft.png)"
 
-      PL1 = document.querySelector(".manster").style. animationName = "none";
+      PL1 = document.querySelector(".manster").style.animationName = "none";
     }
     // move right 
-    else if ((e.keyCode == 68 && monsterFlag == 0) || (e.keyCode   == 39 && monsterFlag == 1) ) {
-      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/monsterNormalRight.png)"
+    else if ((e.keyCode == 68 && monsterFlag == 0) || (e.keyCode == 39 && monsterFlag == 1)) {
+      manster = document.querySelector(".manster").style.backgroundImage = "url(asist/img/labas-monster/monsterNormalRight.png)"
 
-      PL1 = document.querySelector(".manster").style. animationName = "none";
+      PL1 = document.querySelector(".manster").style.animationName = "none";
     }
     // attk right 
     else if (e.keyCode == 75) {
-      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/monsterNormalLeft.png)"
+      manster = document.querySelector(".manster").style.backgroundImage = "url(asist/img/labas-monster/monsterNormalLeft.png)"
 
-      PL1 = document.querySelector(".manster").style. animationName = "none";
+      PL1 = document.querySelector(".manster").style.animationName = "none";
     }
     // atkk left
-    else if (e.keyCode == 76  ) {
-      manster = document.querySelector(".manster").style. backgroundImage ="url(asist/img/labas-monster/monsterNormalRight.png)"
+    else if (e.keyCode == 76) {
+      manster = document.querySelector(".manster").style.backgroundImage = "url(asist/img/labas-monster/monsterNormalRight.png)"
 
-      PL1 = document.querySelector(".manster").style. animationName = "none";
+      PL1 = document.querySelector(".manster").style.animationName = "none";
     }
   }
 
-let mane = document.querySelectorAll('.mane')
+  let mane = document.querySelectorAll('.mane')
 }
 
 
